@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chat socket io</title>
+        <style>
+            #div-list {
+                display: flex;
+                flex-direction: row;
+            }
+            .red {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div-sign-up">
+            <input placeholder="Enter your username" id="txtUsername"/>
+            <br><br>
+            <button id="btnSignUp">Sign Up</button>
+        </div>
+        <br/>
+        <div id="div-chat">
+            <input placeholder="Enter your message" id="txtMessage"/>
+            <br><br>
+            <button id="btnSend">Send Message</button>
+            <br /><br />
+            <div id="div-list">
+                <ul id="onlineUser">
+                </ul>
+                <ul id="listMessage">
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script src="bundle.js"></script>
+</html>
